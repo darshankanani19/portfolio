@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshan Kanani | Developer Portfolio</title>
+    <meta name="description" content="Discover premium apps developed by Darshan Kanani. Explore Smart Shop Manager, Magic Doodle Kids, Sudoku, and ArrowLoom.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@500;700;900&display=swap" rel="stylesheet">
+    <!-- Favicon placeholder -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📱</text></svg>">
+</head>
+<body>
+    <header class="navbar glass">
+        <a href="index.html" class="logo">Darshan Apps</a>
+        <div class="nav-actions">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode"></button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Developer Profile Header -->
+        <section class="dev-header">
+            <div class="dev-avatar">DK</div>
+            <h1>Darshan Kanani</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 600px;">
+                Building premium, fast, and secure mobile experiences. Exploring the boundaries of Flutter and modern UI design.
+            </p>
+            <div class="dev-stats">
+                <div class="stat-item">
+                    <span class="stat-value">4</span>
+                    <span class="stat-label">Published Apps</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">4.8★</span>
+                    <span class="stat-label">Avg Rating</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search and Filter Toolbar -->
+        <section class="toolbar">
+            <div class="search-bar">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" id="search-input" placeholder="Search apps...">
+            </div>
+            
+            <div class="categories">
+                <button class="category-pill active" data-filter="all">All</button>
+                <button class="category-pill" data-filter="business">Business</button>
+                <button class="category-pill" data-filter="kids">Kids</button>
+                <button class="category-pill" data-filter="games">Games</button>
+                <button class="category-pill" data-filter="casual">Casual</button>
+            </div>
+        </section>
+
+        <!-- Featured Apps Grid -->
+        <section class="store-grid" id="apps-container">
+            <!-- App Card 1 -->
+            <a href="app-smart-shop.html" class="app-card" data-category="business">
+                <div class="card-top">
+                    <img src="assets/shop_smart.png" alt="Smart Shop Manager" class="app-icon" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23333%22/></svg>'">
+                    <div class="app-info">
+                        <h3>Smart Shop Manager</h3>
+                        <p class="app-category">Business</p>
+                        <div class="rating">
+                            <span class="star">★</span> 4.9
+                        </div>
+                    </div>
+                </div>
+                <p class="app-desc">Complete POS, billing, and inventory management solution for modern shops.</p>
+                <div class="btn-install">View Details</div>
+            </a>
+
+            <!-- App Card 2 -->
+            <a href="app-magic-doodle.html" class="app-card" data-category="kids">
+                <div class="card-top">
+                    <img src="assets/magic_doodle.png" alt="Magic Doodle Kids" class="app-icon" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23333%22/></svg>'">
+                    <div class="app-info">
+                        <h3>Magic Doodle Kids</h3>
+                        <p class="app-category">Kids & Creative</p>
+                        <div class="rating">
+                            <span class="star">★</span> 4.8
+                        </div>
+                    </div>
+                </div>
+                <p class="app-desc">A safe, ad-friendly creative canvas designed specifically for children's imagination.</p>
+                <div class="btn-install">View Details</div>
+            </a>
+
+            <!-- App Card 3 -->
+            <a href="app-sudoku.html" class="app-card" data-category="games">
+                <div class="card-top">
+                    <img src="assets/sudoku.png" alt="Sudoku" class="app-icon" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23333%22/></svg>'">
+                    <div class="app-info">
+                        <h3>Sudoku</h3>
+                        <p class="app-category">Games / Puzzle</p>
+                        <div class="rating">
+                            <span class="star">★</span> 4.7
+                        </div>
+                    </div>
+                </div>
+                <p class="app-desc">Classic brain training. Clean interface with thousands of puzzles to solve.</p>
+                <div class="btn-install">View Details</div>
+            </a>
+
+            <!-- App Card 4 -->
+            <a href="app-arrowloom.html" class="app-card" data-category="casual">
+                <div class="card-top">
+                    <img src="assets/arrowloom.png" alt="ArrowLoom" class="app-icon" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23333%22/></svg>'">
+                    <div class="app-info">
+                        <h3>ArrowLoom</h3>
+                        <p class="app-category">Casual / Arcade</p>
+                        <div class="rating">
+                            <span class="star">★</span> 4.5
+                        </div>
+                    </div>
+                </div>
+                <p class="app-desc">An engaging strategy puzzle game to test your reflexes and pattern recognition.</p>
+                <div class="btn-install">View Details</div>
+            </a>
+        </section>
+
+        <footer class="footer-links">
+            <a href="https://github.com/darshankanani19" target="_blank">Developer GitHub</a>
+            <a href="policies/shop-smart.html">Privacy Policies</a>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

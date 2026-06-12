@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://darshankanani19.github.io/darshan-web/sitemap.xml
